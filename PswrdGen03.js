@@ -13,7 +13,7 @@ function writePassword() {
 function generatePassword(){
   var numOfChar = prompt("enter the length of password");
    if (!(numOfChar >= 8 && numOfChar < 128)) {
-   return;
+   return(alert("You must enter a value between 8 and 128!"));
    }
   var lowPrompt = confirm("Should your passwaord contain lowercase?");
   var upPrompt = confirm("Should your password include uppercase?");
