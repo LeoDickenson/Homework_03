@@ -15,7 +15,7 @@ function generatePassword(){
    if (!(numOfChar >= 8 && numOfChar < 128)) {
    return(alert("You must enter a value between 8 and 128!"));
    }
-  var lowPrompt = confirm("Should your passwaord contain lowercase?");
+  var lowPrompt = confirm("Should your password contain lowercase?");
   var upPrompt = confirm("Should your password include uppercase?");
   var numPrompt = confirm("Should your password include numbers?")
   var specPrompt = confirm("Should your password include special characters?") 
