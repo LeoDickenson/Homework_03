@@ -12,10 +12,13 @@ function writePassword() {
 
 function generatePassword(){
   var numOfChar = prompt("enter the length of password");
-  // if (!(numOfChar >= 8 && numOfChar < 128)) {
-  //   return;
-  // }
-  console.log(numOfChar);
+   if (!(numOfChar >= 8 && numOfChar < 128)) {
+   return;
+   }
+  var lowPrompt = confirm("Should your passwaord contain lowercase?");
+  var upPrompt = confirm("Should your password include uppercase?");
+  var numPrompt = confirm("Should your password include numbers?")
+  var specPrompt = confirm("Should your password include special characters?") 
   //add "prompt function" for userInput for num of char in password
   // 8>=num<128
   //userInput confirmation for numeric, lowercase, uppercase, special (separately)
