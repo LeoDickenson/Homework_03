@@ -29,32 +29,24 @@ function generatePassword(){
   if (!(numOfChar >= 8 && numOfChar < 128)) {
     return(alert("You must enter a value between 8 and 128!"));
     }
-  if (lowPrompt = true) {
+  if (lowPrompt === true) {
     combinedSelections = combinedSelections.concat(lowerCase);
   }
-  if (upPrompt = true) {
+  if (upPrompt === true) {
     combinedSelections = combinedSelections.concat(upperCase);
     }
-  if (numPrompt = true) {
+  if (numPrompt === true) {
     combinedSelections = combinedSelections.concat(numericChar);
     }
-  if (specPrompt = true) {
+  if (specPrompt === true) {
     combinedSelections = combinedSelections.concat(specialChar);
-    }
+  }
   
+  var passArray = [];
   
   for (i=0; i<numOfChar; i++) {
-    var passArray = []
-    passArray.push(combinedSelections[Math.floor(Math.random() * combinedSelections.length)])
-    console.log(passArray)
+    passArray.push(combinedSelections[Math.floor(Math.random() * combinedSelections.length)]);
   }
-
-
- 
-  //generate random num for concat array and grab the item
-  //push that item in new password array
-  // return new password
+ return(passArray.join(""));
 }
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
