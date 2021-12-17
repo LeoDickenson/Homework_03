@@ -19,10 +19,7 @@ function generatePassword(){
   var upPrompt = confirm("Should your password include uppercase?");
   var numPrompt = confirm("Should your password include numbers?")
   var specPrompt = confirm("Should your password include special characters?") 
-  //add "prompt function" for userInput for num of char in password
-  // 8>=num<128
-  //userInput confirmation for numeric, lowercase, uppercase, special (separately)
-  //save those confirmations in separate variables
+ 
   // store all the values in form of arrays
   // var numeric = [0,1,2,3...]
   //based on user confirmation pick the correct arrays and concatenate them and store that concat array in new    variable
