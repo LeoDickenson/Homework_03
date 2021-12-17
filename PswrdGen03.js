@@ -42,9 +42,15 @@ function generatePassword(){
     combinedSelections = combinedSelections.concat(specialChar);
     }
   
+  
+  for (i=0; i<numOfChar; i++) {
+    var passArray = []
+    passArray.push(combinedSelections[Math.floor(Math.random() * combinedSelections.length)])
+    console.log(passArray)
+  }
 
-  //based on user confirmation pick the correct arrays and concatenate them and store that concat array in new    variable
-  //loop num times
+
+ 
   //generate random num for concat array and grab the item
   //push that item in new password array
   // return new password
